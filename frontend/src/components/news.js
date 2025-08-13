@@ -13,7 +13,7 @@ function News() {
     try {
       setLoading(true);
       setError(null);
-      const response = await fetch("http://localhost:8000/get-news.php");
+      const response = await fetch("http://dominioni.page.gd/get-news.php");
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

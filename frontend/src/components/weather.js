@@ -10,7 +10,7 @@ function Weather() {
       try {
         setLoading(true);
         setError(null);
-        const response = await fetch("http://localhost:8000/get-weather.php?latitude=-30.0105&longitude=-50.1522");
+        const response = await fetch("http://dominioni.page.gd/get-weather.php");
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
