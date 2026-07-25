@@ -10,7 +10,7 @@ function Weather() {
       try {
         setLoading(true);
         setError(null);
-        const response = await fetch("https://randy-tires-theories-costs.trycloudflare.com//dominioni/backend/get-weather.php");
+        const response = await fetch("https://randy-tires-theories-costs.trycloudflare.com/dominioni/backend/get-weather.php");
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
