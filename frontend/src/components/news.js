@@ -13,7 +13,7 @@ function News() {
     try {
       setLoading(true);
       setError(null);
-      const response = await fetch("http://54.226.251.97/dominioni/backend/get-news.php");
+      const response = await fetch("https://randy-tires-theories-costs.trycloudflare.com/dominioni/backend/get-news.php");
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
