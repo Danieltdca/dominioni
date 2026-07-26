@@ -10,7 +10,13 @@ function Weather() {
       try {
         setLoading(true);
         setError(null);
-        const response = await fetch("https://scheming-swimmable-playing.ngrok-free.dev/dominioni/backend/get-weather.php");
+        const response = await fetch("https://scheming-swimmable-playing.ngrok-free.dev/dominioni/backend/get-weather.php",
+          {
+            headers: {
+              "ngrok-skip-browser-warning": "true",
+            },
+          }
+        );
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
